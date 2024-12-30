@@ -45,6 +45,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function buyMultiplier2() {
+    if (coins >= multiplierCost) {
+      coins -= multiplierCost;
+      multiplier += 1;
+      multiplierCost = Math.floor(multiplierCost * 2);
+      document.getElementById(
+        "multiplier"
+      ).textContent = `Multiplier (Cost: ${multiplierCost} coins)`;
+      updateDisplay();
+    }
+  }
+
   // Auto clicker interval
   setInterval(() => {
     coins += (autoClickers * multiplier) / 10;

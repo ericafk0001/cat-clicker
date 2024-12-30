@@ -12,27 +12,33 @@
       <img id="cat-image" src="cat_filler.png" alt="Click the cat!" />
 
       <div class="stats">
-        <h2>Coins: <span id="coin-count">0</span></h2>
-        <p>Coins per second: <span id="coins-per-second">0</span></p>
+        <h2><img src="coin.png" />: <span id="coin-count">0</span></h2>
+        <p>
+          <img src="coin.png" /> per second:
+          <span id="coins-per-second">0</span>
+        </p>
       </div>
 
       <div id="upgrades">
-        <div id="cat-food">
+        <div id="cat-food" class="upgrade-div">
           <h3>Cat Food</h3>
           <button class="upgrade" id="auto-clicker" onclick="buyAutoClicker()">
-            Auto Clicker (Cost: 10 coins)
+            Auto Clicker <br />(Cost: 10 <img src="coin.png" />)
           </button>
           <button class="upgrade" id="auto-clicker" onclick="buyAutoClicker()">
-            Cheap Cat Food (Cost: 20 coins)
+            Cheap Cat Food <br />(Cost: 20 <img src="coin.png" />)
           </button>
           <button class="upgrade" id="auto-clicker" onclick="buyAutoClicker()">
-            Delicious Cat Food (Cost: 100 coins)
+            Delicious Cat Food <br />(Cost: 100 <img src="coin.png" />)
           </button>
         </div>
-        <div id="cat-milk">
+        <div id="cat-milk" class="upgrade-div">
           <h3>Milk Food</h3>
           <button class="upgrade" id="multiplier" onclick="buyMultiplier()">
-            Store Milk (Cost: 50 coins)
+            Store Milk <br />(Cost: 50 <img src="coin.png" />)
+          </button>
+          <button class="upgrade" id="multiplier" onclick="buyMultiplier2()">
+            Mommy Milk <br />(Cost: 500 <img src="coin.png" />)
           </button>
         </div>
       </div>
