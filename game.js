@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let multiplier = 1;
   let autoClickerCost = 10;
   let multiplierCost = 50;
+  let multiplierCost2 = 100;
 
   function updateDisplay() {
     document.getElementById("coin-count").textContent = Math.floor(coins);
