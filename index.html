@@ -4,25 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Clicker</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="game.css" />
   </head>
   <body>
     <div id="game-container">
       <h1>Cat Clicker</h1>
-      <img id="cat-image" src="/api/placeholder/200/200" alt="Click the cat!" />
+      <img id="cat-image" src="cat_filler.png" alt="Click the cat!" />
 
       <div class="stats">
-        <h2>Cats: <span id="cat-count">0</span></h2>
-        <p>Cats per second: <span id="cats-per-second">0</span></p>
+        <h2>Coins: <span id="coin-count">0</span></h2>
+        <p>Coins per second: <span id="coins-per-second">0</span></p>
       </div>
 
       <div id="upgrades">
-        <button class="upgrade" id="auto-clicker" onclick="buyAutoClicker()">
-          Buy Auto Clicker (Cost: 10 cats)
-        </button>
-        <button class="upgrade" id="multiplier" onclick="buyMultiplier()">
-          Buy Multiplier (Cost: 50 cats)
-        </button>
+        <div id="cat-food">
+          <h3>Cat Food</h3>
+          <button class="upgrade" id="auto-clicker" onclick="buyAutoClicker()">
+            Auto Clicker (Cost: 10 coins)
+          </button>
+          <button class="upgrade" id="auto-clicker" onclick="buyAutoClicker()">
+            Cheap Cat Food (Cost: 20 coins)
+          </button>
+          <button class="upgrade" id="auto-clicker" onclick="buyAutoClicker()">
+            Delicious Cat Food (Cost: 100 coins)
+          </button>
+        </div>
+        <div id="cat-milk">
+          <h3>Milk Food</h3>
+          <button class="upgrade" id="multiplier" onclick="buyMultiplier()">
+            Store Milk (Cost: 50 coins)
+          </button>
+        </div>
       </div>
     </div>
     <script src="game.js"></script>
