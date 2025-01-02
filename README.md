@@ -1,2 +1,3 @@
-# cat-clicker
-A Cat Clicker.
+# garden-clicker
+
+A Garden Clicker.
